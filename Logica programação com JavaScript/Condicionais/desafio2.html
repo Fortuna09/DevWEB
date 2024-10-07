@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+</head>
+<body>
+
+    <h2>O usuario digitou um texto no lugar de um numero</h2>
+
+    <script>
+
+        n1 = parseFloat(prompt("Digite o primeiro número entre 1 e 10: "));
+        n2 = parseFloat(prompt("Digite o segundo número entre 1 e 10: "));
+
+        if (isNaN(n1) || isNaN(n2)){
+            alert("Foi digitado um texto no lugar de um numero! Por favor, digite um numero entre 1 e 10.");
+        }else{
+            media = (n1 + n2) / 2;
+            if(media < 4 || n1 == 0 || n2 == 0 || n1 > 10 || n2 > 10){
+                alert("Está reprovado. As regras que foram solicitadas não foram seguidas!");
+            } else {
+                alert("Está aprovado.");
+            }
+        }
+
+        alert("Fim do programa!");
+
+    </script>
+    
+</body>
+</html>

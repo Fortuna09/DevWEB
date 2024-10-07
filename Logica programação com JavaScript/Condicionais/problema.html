@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema</title>
+</head>
+<body>
+
+    <h2>Foi pedido para o usuario digitar dois numeros de 0 a 10 mas foi digitado
+        um numero maior que 10. O que acontece?
+    </h2>
+
+    <script>
+
+        let n1 = parseFloat(prompt("Digite o primeiro número entre 1 e 10: "));
+        let n2 = parseFloat(prompt("Digite o segundo número entre 1 e 10: "));
+        
+        if(n1 < 1 || n2 < 1 || n1 > 10 || n2 > 10){
+            alert("Os números digitados estão fora do intervalo permitido."); //trabalhar o caso que nao entra no intervalo pedido
+        }else{
+            media = (n1 + n2) / 2;
+            if(media < 4){
+                alert("Está reprovado.");
+            } else {
+                alert("Está aprovado.");
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>

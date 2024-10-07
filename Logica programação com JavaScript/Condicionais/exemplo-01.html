@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 1</title>
+</head>
+
+<body>
+
+    <h1>Condicional</h1>
+
+
+    <script>
+
+        n1 = parseFloat(prompt("Digite o primeiro número entre 1 e 10: "));
+        n2 = parseFloat(prompt("Digite o segundo número entre 1 e 10: "));
+
+
+        if (n1 <= 0 || n2 > 10) {
+            alert("Os números digitados estão fora do intervalo permitido.");
+        } else {
+
+            media = (n1 + n2) / 2;
+
+            if (media < 4) {
+                alert("Está reprovado.");
+            } else {
+                alert("Está aprovado.");
+            }
+            
+        }
+
+        alert("Fim do programa!!!");
+
+    </script>
+</body>
+
+</html>
