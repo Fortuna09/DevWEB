@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <h1>Exercicio 3</h1>
+
+    <script>
+        let n1 = parseFloat(prompt("Digite o primeiro número entre 1 e 10: "));
+        let n2 = parseFloat(prompt("Digite o segundo número entre 1 e 10: "));
+        
+        if(n1 <= 0 || n2 > 10){
+            alert("Os números digitados estão fora do intervalo permitido.");    
+        }else{
+            let n3 = (n1 + n2) / 2;
+            if(n3 > 4){
+                alert("A média dos números é maior que 4.");
+            } else {
+                alert("A média dos números é menor ou igual a 4.");
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
